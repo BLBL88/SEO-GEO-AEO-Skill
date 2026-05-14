@@ -1,0 +1,17 @@
+{
+  "name": "claude-seo-geo-aeo",
+  "version": "1.0.0",
+  "description": "One-command installer for the SEO/GEO/AEO audit skill in Claude Code",
+  "bin": {
+    "claude-seo-geo-aeo": "./bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "SKILL.md"
+  ],
+  "keywords": ["claude", "seo", "geo", "aeo", "skill", "audit"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  }
+}

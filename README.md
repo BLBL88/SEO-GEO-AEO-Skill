@@ -1,5 +1,7 @@
 # SEO / GEO / AEO Audit — Skill for Claude
 
+[![npm](https://img.shields.io/npm/v/claude-seo-geo-aeo)](https://www.npmjs.com/package/claude-seo-geo-aeo)
+
 Automatically audits any website across three dimensions of modern search visibility:
 
 - **SEO** — Traditional search engine optimization (Google, Bing): title tags, meta descriptions, heading structure, schema markup, internal links, content quality
@@ -23,15 +25,23 @@ Claude will ask whether you want a **Quick Audit** (top issues and scores) or a 
 
 ## Installation
 
-This tool is distributed as a ZIP archive for use in **Claude's Cowork desktop app**.
+### Claude Code (one command)
+
+```bash
+npx claude-seo-geo-aeo
+```
+
+Done. Use `/seo-geo-aeo` in Claude Code to run an audit.
+
+### Claude Desktop / Cowork (manual)
 
 1. Download the ZIP from this repository (click **Code → Download ZIP** on GitHub)
 2. Open the Claude desktop app or website
 3. Navigate to Customize
 4. Go to **Skills** and click the **+** icon
-5. Upload the ZIP here and it should install the Skill for you
+5. Upload the ZIP
 
-No unzipping required. The skill will be active for that session and any subsequent sessions where you provide the ZIP.
+No unzipping required.
 
 ---
 
@@ -39,13 +49,23 @@ No unzipping required. The skill will be active for that session and any subsequ
 
 ```
 SEO-GEO-AEO-Skill/
+├── .github/workflows/
+│   └── release.yml      ← auto changelog + git tag on merge
+├── bin/
+│   └── install.js       ← npx installer
 ├── SKILL.md             ← Audit instructions (source of truth)
+├── package.json
 └── README.md
 ```
 
 ---
 
 ## Version history
+
+Releases and changelogs are auto-generated from commit history. See [GitHub Releases](../../releases) for full notes.
+
+**1.1.0** — npx installer
+- `npx claude-seo-geo-aeo` one-command install for Claude Code
 
 **1.0.0** — Initial release
 - Quick and Full audit modes
